@@ -14,6 +14,11 @@ how a consumer would use the library (e.g. adding unit tests, updating documenta
 
 - Bug where an empty destination list in a device's backup set broke creation of DeviceSettings objects for that device.
 
+### Added
+
+- Added new exception `Py42UserNotAssignedToRule` to throw error if `alert_rules.remove_user` throws `400` when `user_id` is not linked to the `rule_id`.
+- Added new exception `Py42UserDoesNotExist` to throw error if `remove()` throws `400` when user does not exist in the detection list.
+
 ## 1.9.0 - 2020-10-02
 
 ### Changed
